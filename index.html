@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <style>
+            body{
+                background-image: url("greeny.jpg");
+                background-size: cover;
+                font-weight: bold;
+                color: white;
+                text-align: center;
+            }
+            h2{
+                color: goldenrod;
+            }
+            #message-el{
+                font-style: italic;
+            }
+            button{
+                width: 150px;
+                height: 25px;
+                background-color: goldenrod;
+                font-weight: bold;
+                color: #016f32;
+                border: none;
+                padding: auto;
+                border-radius: 3px;
+                display: block;
+                margin: auto;
+                margin-bottom: 4px;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Blackjack</h2>
+        <h3 id="message-el">Want to play a round?</h3>
+        <h3 id="card-el">Cards:</h3>
+        <h3 id="sum-el">Sum:</h3>
+        <button id="start-button" onclick="startGame()">START GAME</button>
+        <button id="new-button" onclick="newCard()">NEW CARD</button>
+        <p id="player-el"></p>
+        <script src="index.js"></script>
+    </body>
+</html>
